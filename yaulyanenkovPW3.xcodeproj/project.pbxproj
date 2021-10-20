@@ -10,9 +10,12 @@
 		9927ED2C27208C1E009722E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED2B27208C1E009722E7 /* AppDelegate.swift */; };
 		9927ED2E27208C1E009722E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED2D27208C1E009722E7 /* SceneDelegate.swift */; };
 		9927ED3027208C1E009722E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED2F27208C1E009722E7 /* ViewController.swift */; };
-		9927ED3327208C1E009722E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9927ED3127208C1E009722E7 /* Main.storyboard */; };
 		9927ED3527208C20009722E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9927ED3427208C20009722E7 /* Assets.xcassets */; };
 		9927ED3827208C20009722E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9927ED3627208C20009722E7 /* LaunchScreen.storyboard */; };
+		9927ED4027208F72009722E7 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED3F27208F72009722E7 /* StackViewController.swift */; };
+		9927ED4227208FA7009722E7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4127208FA7009722E7 /* TableViewController.swift */; };
+		9927ED4427208FC4009722E7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4327208FC4009722E7 /* CollectionViewController.swift */; };
+		9927ED4627209448009722E7 /* UIImage++resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4527209448009722E7 /* UIImage++resize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		9927ED2B27208C1E009722E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9927ED2D27208C1E009722E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9927ED2F27208C1E009722E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9927ED3227208C1E009722E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9927ED3427208C20009722E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9927ED3727208C20009722E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9927ED3927208C20009722E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9927ED3F27208F72009722E7 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		9927ED4127208FA7009722E7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9927ED4327208FC4009722E7 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		9927ED4527209448009722E7 /* UIImage++resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage++resize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,13 @@
 				9927ED2B27208C1E009722E7 /* AppDelegate.swift */,
 				9927ED2D27208C1E009722E7 /* SceneDelegate.swift */,
 				9927ED2F27208C1E009722E7 /* ViewController.swift */,
-				9927ED3127208C1E009722E7 /* Main.storyboard */,
 				9927ED3427208C20009722E7 /* Assets.xcassets */,
 				9927ED3627208C20009722E7 /* LaunchScreen.storyboard */,
 				9927ED3927208C20009722E7 /* Info.plist */,
+				9927ED3F27208F72009722E7 /* StackViewController.swift */,
+				9927ED4127208FA7009722E7 /* TableViewController.swift */,
+				9927ED4327208FC4009722E7 /* CollectionViewController.swift */,
+				9927ED4527209448009722E7 /* UIImage++resize.swift */,
 			);
 			path = yaulyanenkovPW3;
 			sourceTree = "<group>";
@@ -127,7 +136,6 @@
 			files = (
 				9927ED3827208C20009722E7 /* LaunchScreen.storyboard in Resources */,
 				9927ED3527208C20009722E7 /* Assets.xcassets in Resources */,
-				9927ED3327208C1E009722E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9927ED4427208FC4009722E7 /* CollectionViewController.swift in Sources */,
 				9927ED3027208C1E009722E7 /* ViewController.swift in Sources */,
+				9927ED4027208F72009722E7 /* StackViewController.swift in Sources */,
 				9927ED2C27208C1E009722E7 /* AppDelegate.swift in Sources */,
+				9927ED4227208FA7009722E7 /* TableViewController.swift in Sources */,
+				9927ED4627209448009722E7 /* UIImage++resize.swift in Sources */,
 				9927ED2E27208C1E009722E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9927ED3127208C1E009722E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9927ED3227208C1E009722E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9927ED3627208C20009722E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
