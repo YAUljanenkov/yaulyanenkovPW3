@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E1F6CC4E-E673-4ACB-AD6D-BC68D90E7DDD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A8B38B4-ABE8-4B12-A8FB-50B05C28598C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "yaulyanenkovPW3/Controller/TableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "TableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5A8B38B4-ABE8-4B12-A8FB-50B05C28598C - 51bb32bffbf67f00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yaulyanenkovPW3.TableViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; yaulyanenkovPW3.TableViewController"
+                  moduleName = "yaulyanenkovPW3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/schmitzer/Documents/iOSCourse/yaulyanenkovPW3/yaulyanenkovPW3/Controller/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5A8B38B4-ABE8-4B12-A8FB-50B05C28598C - b7f7558e2d9b66bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yaulyanenkovPW3.TableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; yaulyanenkovPW3.TableViewController"
+                  moduleName = "yaulyanenkovPW3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/schmitzer/Documents/iOSCourse/yaulyanenkovPW3/yaulyanenkovPW3/Controller/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "5A8B38B4-ABE8-4B12-A8FB-50B05C28598C - 8bdb7ede435d25c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yaulyanenkovPW3.TableViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;yaulyanenkovPW3.TableViewController&gt;"
+                  moduleName = "yaulyanenkovPW3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/schmitzer/Documents/iOSCourse/yaulyanenkovPW3/yaulyanenkovPW3/Controller/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5A8B38B4-ABE8-4B12-A8FB-50B05C28598C - d85e3cd9d8ee4074"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yaulyanenkovPW3.TableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;yaulyanenkovPW3.TableViewController&gt;"
+                  moduleName = "yaulyanenkovPW3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/schmitzer/Documents/iOSCourse/yaulyanenkovPW3/yaulyanenkovPW3/Controller/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "5A8B38B4-ABE8-4B12-A8FB-50B05C28598C - b8c7b2fcd6c6ccdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "yaulyanenkovPW3.TableViewController.__deallocating_deinit"
+                  moduleName = "yaulyanenkovPW3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/schmitzer/Documents/iOSCourse/yaulyanenkovPW3/yaulyanenkovPW3/Controller/TableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

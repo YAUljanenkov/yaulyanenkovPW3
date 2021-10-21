@@ -19,6 +19,7 @@
 		9927ED4827209617009722E7 /* UIView++Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4727209617009722E7 /* UIView++Pin.swift */; };
 		9927ED4C27209C62009722E7 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4B27209C62009722E7 /* Alarm.swift */; };
 		9927ED4E2721A9D8009722E7 /* UIView++Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4D2721A9D8009722E7 /* UIView++Border.swift */; };
+		9927ED502721ADC9009722E7 /* EyeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4F2721ADC9009722E7 /* EyeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9927ED4727209617009722E7 /* UIView++Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++Pin.swift"; sourceTree = "<group>"; };
 		9927ED4B27209C62009722E7 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		9927ED4D2721A9D8009722E7 /* UIView++Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++Border.swift"; sourceTree = "<group>"; };
+		9927ED4F2721ADC9009722E7 /* EyeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				9927ED4B27209C62009722E7 /* Alarm.swift */,
+				9927ED4F2721ADC9009722E7 /* EyeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				9927ED4427208FC4009722E7 /* CollectionViewController.swift in Sources */,
 				9927ED3027208C1E009722E7 /* ViewController.swift in Sources */,
+				9927ED502721ADC9009722E7 /* EyeCell.swift in Sources */,
 				9927ED4C27209C62009722E7 /* Alarm.swift in Sources */,
 				9927ED4827209617009722E7 /* UIView++Pin.swift in Sources */,
 				9927ED4027208F72009722E7 /* StackViewController.swift in Sources */,
