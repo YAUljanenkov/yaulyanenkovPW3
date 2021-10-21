@@ -16,6 +16,9 @@
 		9927ED4227208FA7009722E7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4127208FA7009722E7 /* TableViewController.swift */; };
 		9927ED4427208FC4009722E7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4327208FC4009722E7 /* CollectionViewController.swift */; };
 		9927ED4627209448009722E7 /* UIImage++resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4527209448009722E7 /* UIImage++resize.swift */; };
+		9927ED4827209617009722E7 /* UIView++Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4727209617009722E7 /* UIView++Pin.swift */; };
+		9927ED4C27209C62009722E7 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4B27209C62009722E7 /* Alarm.swift */; };
+		9927ED4E2721A9D8009722E7 /* UIView++Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927ED4D2721A9D8009722E7 /* UIView++Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		9927ED4127208FA7009722E7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9927ED4327208FC4009722E7 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		9927ED4527209448009722E7 /* UIImage++resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage++resize.swift"; sourceTree = "<group>"; };
+		9927ED4727209617009722E7 /* UIView++Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++Pin.swift"; sourceTree = "<group>"; };
+		9927ED4B27209C62009722E7 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		9927ED4D2721A9D8009722E7 /* UIView++Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++Border.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +68,37 @@
 		9927ED2A27208C1E009722E7 /* yaulyanenkovPW3 */ = {
 			isa = PBXGroup;
 			children = (
+				9927ED4A27209C46009722E7 /* View */,
 				9927ED2B27208C1E009722E7 /* AppDelegate.swift */,
 				9927ED2D27208C1E009722E7 /* SceneDelegate.swift */,
 				9927ED2F27208C1E009722E7 /* ViewController.swift */,
 				9927ED3427208C20009722E7 /* Assets.xcassets */,
 				9927ED3627208C20009722E7 /* LaunchScreen.storyboard */,
 				9927ED3927208C20009722E7 /* Info.plist */,
+				9927ED4927209BE9009722E7 /* Controller */,
+				9927ED4527209448009722E7 /* UIImage++resize.swift */,
+				9927ED4727209617009722E7 /* UIView++Pin.swift */,
+				9927ED4D2721A9D8009722E7 /* UIView++Border.swift */,
+			);
+			path = yaulyanenkovPW3;
+			sourceTree = "<group>";
+		};
+		9927ED4927209BE9009722E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				9927ED3F27208F72009722E7 /* StackViewController.swift */,
 				9927ED4127208FA7009722E7 /* TableViewController.swift */,
 				9927ED4327208FC4009722E7 /* CollectionViewController.swift */,
-				9927ED4527209448009722E7 /* UIImage++resize.swift */,
 			);
-			path = yaulyanenkovPW3;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9927ED4A27209C46009722E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9927ED4B27209C62009722E7 /* Alarm.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +173,11 @@
 			files = (
 				9927ED4427208FC4009722E7 /* CollectionViewController.swift in Sources */,
 				9927ED3027208C1E009722E7 /* ViewController.swift in Sources */,
+				9927ED4C27209C62009722E7 /* Alarm.swift in Sources */,
+				9927ED4827209617009722E7 /* UIView++Pin.swift in Sources */,
 				9927ED4027208F72009722E7 /* StackViewController.swift in Sources */,
 				9927ED2C27208C1E009722E7 /* AppDelegate.swift in Sources */,
+				9927ED4E2721A9D8009722E7 /* UIView++Border.swift in Sources */,
 				9927ED4227208FA7009722E7 /* TableViewController.swift in Sources */,
 				9927ED4627209448009722E7 /* UIImage++resize.swift in Sources */,
 				9927ED2E27208C1E009722E7 /* SceneDelegate.swift in Sources */,

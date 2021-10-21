@@ -6,5 +6,7 @@
 //
 
 class StackViewController: ViewController {
-    
+    override func viewDidLoad() {
+        view.backgroundColor = .gray
+    }
 }

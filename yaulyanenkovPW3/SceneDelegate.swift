@@ -22,6 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             CollectionViewController()
         ]
         tabBarController.setViewControllers(viewControllers, animated: false)
+        tabBarController.tabBar.backgroundColor = .systemGray5
+        tabBarController.tabBar.isTranslucent = false
         let nav = UINavigationController(rootViewController: tabBarController)
         window.rootViewController = nav
         self.window = window
