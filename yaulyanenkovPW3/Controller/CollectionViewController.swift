@@ -17,7 +17,7 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AlarmViewCollection
         
         let alarmData = alarmManager.alarms[indexPath.row]
-        
+        cell.alarmId = indexPath.row
         cell.alarmToggle.isOn = alarmData.value(forKey: "isActive") as? Bool ?? false
         cell.alarmLabel.text = "\(alarmData.value(forKey: "time") ?? "00:00")"
         cell.layer.masksToBounds = true

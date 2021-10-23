@@ -26,7 +26,7 @@ class AlarmManager {
         }
         
         if(alarms.isEmpty) {
-            for _ in 1...5 {
+            for _ in 1...30 {
                 let hour = Int.random(in: 0..<23)
                 let minute = Int.random(in: 0..<59)
                 var hourString: String, minuteString: String

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TableViewController: UITableViewController {
     
     private let cellId = "Alarm"
     private let alarmManager = (UIApplication.shared.delegate as! AppDelegate).alarmManager
@@ -24,42 +24,38 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tabBarController?.title = "Table"
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath:
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath:
                    IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: cellId,
             for: indexPath
-        ) as? AlarmViewCell
+        ) as! AlarmViewCell
         let alarmData = alarmManager.alarms[indexPath.row]
-        cell?.alarmToggle.isOn = alarmData.value(forKey: "isActive") as? Bool ?? false
-        cell?.alarmLabel.text = "\(alarmData.value(forKey: "time") ?? "00:00")"
-        cell?.setUpCell()
-        return cell ?? UITableViewCell()
+        cell.clipsToBounds = true
+        cell.alarmId = indexPath.row
+        cell.alarmToggle.isOn = alarmData.value(forKey: "isActive") as? Bool ?? false
+        cell.alarmLabel.text = "\(alarmData.value(forKey: "time") ?? "00:00")"
+        cell.setUpCell()
+        return cell
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection
                    section: Int) -> Int {
         
         alarmManager.alarms.count
         
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
     
     func setupTableView() {
-        let table = UITableView()
-        table.register(AlarmViewCell.self, forCellReuseIdentifier: cellId)
-        table.delegate = self
-        table.backgroundColor = .white
-        table.translatesAutoresizingMaskIntoConstraints = false
-        table.dataSource = self
-        view.addSubview(table)
-        table.pinTop(to: view.safeAreaLayoutGuide.topAnchor)
-        table.pinBottom(to: view.safeAreaLayoutGuide.bottomAnchor)
-        table.pin(to: view, .left, .right)
+        tableView.register(AlarmViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.delegate = self
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.dataSource = self
         
     }
     

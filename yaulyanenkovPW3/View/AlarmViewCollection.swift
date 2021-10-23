@@ -8,7 +8,7 @@
 import UIKit
 
 class AlarmViewCollection : UICollectionViewCell {
-    
+    private let alarmManager = (UIApplication.shared.delegate as! AppDelegate).alarmManager
     let alarmLabel: UILabel = {
         let alarmLabel = UILabel()
         alarmLabel.text = "04:20"
@@ -20,6 +20,11 @@ class AlarmViewCollection : UICollectionViewCell {
     let alarmToggle: UISwitch = {
         let alarmToggle = UISwitch()
         alarmToggle.translatesAutoresizingMaskIntoConstraints = false
+        alarmToggle.addTarget(
+             self,
+             action: #selector(alarmToggleSwitched),
+             for: .valueChanged
+         )
         return alarmToggle
     }()
     
@@ -28,6 +33,8 @@ class AlarmViewCollection : UICollectionViewCell {
         setupAlarmToggle();
         self.addBorders(edges: .bottom, color: .black, width: 1)
     }
+    
+    var alarmId = 0
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -42,5 +49,10 @@ class AlarmViewCollection : UICollectionViewCell {
         alarmToggle.pinTop(to: self, 10)
         alarmToggle.pinRight(to: self, 20)
     }
-
+    
+    @objc
+     func alarmToggleSwitched(_ sender: UISwitch) {
+         alarmManager.alarms[alarmId].setValue( alarmToggle.isOn, forKey: "isActive")
+         alarmManager.saveContext()
+     }
 }
