@@ -9,27 +9,40 @@ import UIKit
 
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    private let cellId = "Alarm"
+    private let alarmManager = (UIApplication.shared.delegate as! AppDelegate).alarmManager
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
+        self.tabBarController?.title = "Table"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         setupTableView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.title = "Table"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:
                    IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
-            withIdentifier: "eyeCell",
+            withIdentifier: cellId,
             for: indexPath
-        ) as? EyeCell
-        
-        cell?.setupEye()
+        ) as? AlarmViewCell
+        let alarmData = alarmManager.alarms[indexPath.row]
+        cell?.alarmToggle.isOn = alarmData.value(forKey: "isActive") as? Bool ?? false
+        cell?.alarmLabel.text = "\(alarmData.value(forKey: "time") ?? "00:00")"
+        cell?.setUpCell()
         return cell ?? UITableViewCell()
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection
                    section: Int) -> Int {
-        300
+        
+        alarmManager.alarms.count
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,7 +51,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func setupTableView() {
         let table = UITableView()
-        table.register(EyeCell.self, forCellReuseIdentifier: "eyeCell")
+        table.register(AlarmViewCell.self, forCellReuseIdentifier: cellId)
         table.delegate = self
         table.backgroundColor = .white
         table.translatesAutoresizingMaskIntoConstraints = false
